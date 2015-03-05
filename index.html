@@ -5,72 +5,104 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab|Roboto' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <section>
-      <h1>Pet Adoption Form</h1>
-      <form>
-        <fieldset>
-          <legend>Adopter Information</legend>
-          <label for="first-name">First Name</label>
-          <input type="text" id="first-name">
-          <label for="last-name">Last Name</label>
-          <input type="text" id="last-name">
-          <label for="age">Age</label>
-          <input type="number" id="age" >
-        </fieldset>
-        <fieldset>
-          <legend>Home Information</legend>
-          <label for="rent-own">Rent or Own?</label>
-          <select id="rent-own">
-            <option>Rent</option>
-            <option>Own</option>
-          </select>
-          <label for="yard">Fenced Yard?</label>
-          <select id="yard">
-            <option>Yes</option>
-            <option>No</option>
-          </select>
-          <label for="pets">Other pets?</label>
-          <select id="pets">
-            <option>No</option>
-            <option>Yes, dog(s)</option>
-            <option>Yes, cat(s)</option>
-            <option>Yes, dog(s) &amp; cat(s)</option>
-          </select>
-        </fieldset>
-        <fieldset>
-          <legend>Adoption Preferences</legend>
-          <label for="type">Type</label>
-          <select id="type">
-            <option>Dog</option>
-            <option>Cat</option>
-            <option>Small &amp; furry</option>
-          </select>
-          <label for="breed">Breed</label>
-          <input type="text" id="breed">
-          <fieldset>
-            <legend>Age</legend>
-            <input type="checkbox" id="baby">
-            <label for="baby">Baby</label>
-            <input type="checkbox" id="young">
-            <label for="young">Young</label>
-            <input type="checkbox" id="adult">
-            <label for="adult">Adult</label>
-            <input type="checkbox" id="senior">
-            <label for="senior">Senior</label>
+    <main>
+      <h1>Adopt a Pet</h1>
+      <section>
+        <h1>Pet Adoption Form</h1>
+        <form>
+          <fieldset class="border adopterInfo" >
+            <legend>Adopter Information</legend>
+            <ul>
+              <li>
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name">
+              </li>
+              <li>
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name">
+              </li>
+              <li>
+                <label for="age">Age</label>
+                <input type="number" id="age">
+              </li>
+            </ul>
           </fieldset>
-          <label for="gender">Gender</label>
-          <select id="gender">
-            <option>Male</option>
-            <option>Female</option>
-            <option>Either</option>
-          </select>
-        </fieldset>
-      </form>
-    </section>
-    <section>
-      <h1>Video/Audio</h1>
-    </section>
+          <fieldset class="border homeInfo">
+            <legend>Home Information</legend>
+            <ul>
+              <li>
+                <label for="rent-own">Rent or Own?</label>
+                <select id="rent-own">
+                  <option>Rent</option>
+                  <option>Own</option>
+                </select>
+              </li>
+            </li>
+              <label for="yard">Fenced Yard?</label>
+              <select id="yard">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </li>
+            <li>
+              <label for="pets">Other pets?</label>
+              <select id="pets">
+                <option>No</option>
+                <option>Yes, dog(s)</option>
+                <option>Yes, cat(s)</option>
+                <option>Yes, dog(s) &amp; cat(s)</option>
+              </select>
+            </li>
+          </ul>
+          </fieldset>
+          <fieldset class="border adoptPref">
+            <legend>Adoption Preferences</legend>
+            <ul>
+              <li>
+                <label for="type">Type</label>
+                <select id="type">
+                  <option>Any</option>
+                  <option>Dog</option>
+                  <option>Cat</option>
+                  <option>Small &amp; furry</option>
+                </select>
+              </li>
+              <li>
+                <label for="breed">Breed</label>
+                <input type="text" id="breed">
+              </li>
+              <li>
+                <label for="age">Age</label>
+                <select id="age">
+                  <option>Any</option>
+                  <option>Baby</option>
+                  <option>Young</option>
+                  <option>Adult</option>
+                  <option>Senior</option>
+                </select>
+              </li>
+              <li>
+                <label for="gender">Gender</label>
+                <select id="gender">
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Either</option>
+                </select>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </section>
+      <section>
+        <h1>How to Adopt a Dog</h1>
+        <video controls="" src="https://vid.ly/h6n7s6?content=video" id="video-tech" preload="metadata"></video>
+        <p>Video from Petfinder.com</p>
+      </section>
+    </main>
   </body>
 </html>
