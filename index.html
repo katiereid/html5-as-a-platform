@@ -15,61 +15,65 @@
       <section>
         <h1>Pet Adoption Form</h1>
         <form>
-          <fieldset class="border adopterInfo" >
+          <fieldset class="border" >
             <legend>Adopter Information</legend>
             <ul>
               <li>
-                <label for="first-name">First Name</label>
-                <input type="text" id="first-name">
+                <label for="first-name">First Name <span>*</span></label>
+                <input type="text" id="first-name" required="required">
               </li>
               <li>
-                <label for="last-name">Last Name</label>
-                <input type="text" id="last-name">
+                <label for="last-name">Last Name <span>*</span></label>
+                <input type="text" id="last-name" required="required">
               </li>
               <li>
-                <label for="age">Age</label>
-                <input type="number" id="age">
+                <label for="age">Age <span>*</span></label>
+                <input type="number" id="age" required="required">
               </li>
             </ul>
           </fieldset>
-          <fieldset class="border homeInfo">
+          <fieldset class="border">
             <legend>Home Information</legend>
             <ul>
               <li>
-                <label for="rent-own">Rent or Own?</label>
-                <select id="rent-own">
-                  <option>Rent</option>
-                  <option>Own</option>
+                <label for="rent-own">Rent or Own? <span>*</span></label>
+                <select id="rent-own" required="required">
+                  <option value="">Select one...</option>
+                  <option value="rent">Rent</option>
+                  <option value="own">Own</option>
                 </select>
               </li>
             </li>
-              <label for="yard">Fenced Yard?</label>
-              <select id="yard">
-                <option>Yes</option>
-                <option>No</option>
+              <label for="yard">Fenced Yard? <span>*</span></label>
+              <select id="yard" required="required">
+                <option value="">Select one...</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
               </select>
             </li>
             <li>
-              <label for="pets">Other pets?</label>
-              <select id="pets">
-                <option>No</option>
-                <option>Yes, dog(s)</option>
-                <option>Yes, cat(s)</option>
-                <option>Yes, dog(s) &amp; cat(s)</option>
+              <label for="pets">Other pets? <span>*</span></label>
+              <select id="pets" required="required">
+                <option value="">Select one...</option>
+                <option value="no">No</option>
+                <option value="dogs">Yes, dog(s)</option>
+                <option value="cats">Yes, cat(s)</option>
+                <option value="both">Yes, dog(s) &amp; cat(s)</option>
               </select>
             </li>
           </ul>
           </fieldset>
-          <fieldset class="border adoptPref">
+          <fieldset class="border">
             <legend>Adoption Preferences</legend>
             <ul>
               <li>
-                <label for="type">Type</label>
-                <select id="type">
-                  <option>Any</option>
-                  <option>Dog</option>
-                  <option>Cat</option>
-                  <option>Small &amp; furry</option>
+                <label for="type">Type <span>*</span></label>
+                <select id="type" required="required">
+                  <option value="">Select one...</option>
+                  <option value="any">Any</option>
+                  <option value="dog">Dog</option>
+                  <option value="cat">Cat</option>
+                  <option value="small-furry">Small &amp; furry</option>
                 </select>
               </li>
               <li>
@@ -89,16 +93,17 @@
               <li>
                 <label for="gender">Gender</label>
                 <select id="gender">
+                  <option>Either</option>
                   <option>Male</option>
                   <option>Female</option>
-                  <option>Either</option>
                 </select>
               </li>
             </ul>
           </fieldset>
+          <button type="submit">Find my pet!</button>
         </form>
       </section>
-      <section>
+      <section class="videoContainer">
         <h1>How to Adopt a Dog</h1>
         <video controls="" src="https://vid.ly/h6n7s6?content=video" id="video-tech" preload="metadata"></video>
         <p>Video from Petfinder.com</p>
