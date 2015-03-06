@@ -13,21 +13,21 @@
     <main>
       <h1>Adopt a Pet</h1>
       <section>
-        <h1>Pet Adoption Form</h1>
+        <h1 class='sectionTitle'>Pet Adoption Form</h1>
         <form>
           <fieldset class="border" >
             <legend>Adopter Information</legend>
             <ul>
               <li>
-                <label for="first-name">First Name <span>*</span></label>
+                <label for="first-name">First Name <span class='red-alert'>*</span></label>
                 <input type="text" id="first-name" required="required">
               </li>
               <li>
-                <label for="last-name">Last Name <span>*</span></label>
+                <label for="last-name">Last Name <span class='red-alert'>*</span></label>
                 <input type="text" id="last-name" required="required">
               </li>
               <li>
-                <label for="age">Age <span>*</span></label>
+                <label for="age">Age <span class='red-alert'>*</span></label>
                 <input type="number" id="age" required="required">
               </li>
             </ul>
@@ -36,7 +36,7 @@
             <legend>Home Information</legend>
             <ul>
               <li>
-                <label for="rent-own">Rent or Own? <span>*</span></label>
+                <label for="rent-own">Rent or Own? <span class='red-alert'>*</span></label>
                 <select id="rent-own" required="required">
                   <option value="">Select one...</option>
                   <option value="rent">Rent</option>
@@ -44,7 +44,7 @@
                 </select>
               </li>
             </li>
-              <label for="yard">Fenced Yard? <span>*</span></label>
+              <label for="yard">Fenced Yard? <span class='red-alert'>*</span></label>
               <select id="yard" required="required">
                 <option value="">Select one...</option>
                 <option value="yes">Yes</option>
@@ -52,7 +52,7 @@
               </select>
             </li>
             <li>
-              <label for="pets">Other pets? <span>*</span></label>
+              <label for="pets">Other pets? <span class='red-alert'>*</span></label>
               <select id="pets" required="required">
                 <option value="">Select one...</option>
                 <option value="no">No</option>
@@ -104,7 +104,7 @@
         </form>
       </section>
       <section class="videoContainer">
-        <h1>How to Adopt a Dog</h1>
+        <h1 class='sectionTitle'>How to Adopt a Dog</h1>
         <video controls="" src="https://vid.ly/h6n7s6?content=video" id="video-tech" preload="metadata"></video>
         <p>Video from Petfinder.com</p>
       </section>
