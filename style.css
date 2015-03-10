@@ -33,13 +33,6 @@ form {
   font-size: 1.1em;
 }
 
-/*h1 {
-  text-align: center;
-  font-family: 'Josefin Slab', serif;
-  font-size: 3.5em;
-  margin-top: 20px;
-}*/
-
 .headerText {
   font-size: 2.5em;
   font-family:'Josefin Slab', serif;
@@ -113,8 +106,6 @@ select {
   padding: 5px 8px;
   margin-top: 10px;
   font-size: 1em;
-  font-family: 'Roboto', sans-serif;
-
 }
 
 button {
@@ -138,12 +129,5 @@ button:hover {
   margin-bottom: 15px;
 }
 
-p {
-  text-align: center;
-  margin-top: 5px;
-}
 
-.videoContainer {
-  margin-top: 50px;
-}
 
