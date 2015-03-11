@@ -3,93 +3,14 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
-.logoFont {
-  font-family: 'Berkshire Swash', cursive;
-  font-size: 3.5em;
-  display: inline-block;
-}
-
-.mainHeader {
-  background-color: #79a0e8;
-  padding: 2%;
-}
-
-.floatRight {
-  float: right;
-}
-
-.inlineBlock {
-  display: inline-block;
-}
-
-.navLinks {
-  color: #EEE;
-  font-size: 1.5em;
-}
-
-.spanAll {
-  width: 100%;
-}
-
 form {
   width: 45%;
   margin: 0px auto;
   font-size: 1.1em;
 }
 
-.headerText {
-  font-size: 3.2em;
-  margin-bottom: .5em;
-}
-
 legend {
   font-size: 1.5em;
-}
-
-.catBackground {
-  background-image: url(images/catbackground.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.grayBackground {
-  background-color: #d5d7db;
-}
-
-.blueBackground {
-  background-color: #1f4894;
-  color: #EEE;
-}
-.contentBox {
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 4%;
-  padding-bottom: 4%;
-  text-align: center;
-}
-
-.bannerText {
-  position: absolute;
-  left: 10rem;
-  top: 15rem;
-  color: #EEE;
-  font-size: 3em;
-}
-.centered {
-  margin: 0px auto;
-  display:block;
-}
-
-.red-alert {
-  color: red;
-}
-
-.border {
-  background-color: #F2F2F2;
-  border: 3px solid #616060;
-  padding: 3%;
-  border-radius: 5px;
-  margin-top: 5px;
 }
 
 input {
@@ -130,12 +51,6 @@ button {
   border-radius: 5px;
   font-size: 1.2rem;
 }
-
-button:hover {
-  background-color: rgba(42, 31, 255, 0.80);
-  cursor: pointer;
-}
-
 
 @media screen and (max-width: 690px) {
 
