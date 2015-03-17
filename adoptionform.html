@@ -45,41 +45,10 @@
             </ul>
           </fieldset>
           <fieldset class="border">
-            <legend>Home Information</legend>
-            <ul>
-              <li>
-                <label for="rent-own">Rent or Own? <span class='red-alert'>*</span></label>
-                <select id="rent-own" required="required">
-                  <option value="">Select one...</option>
-                  <option value="rent">Rent</option>
-                  <option value="own">Own</option>
-                </select>
-              </li>
-            </li>
-              <label for="yard">Fenced Yard? <span class='red-alert'>*</span></label>
-              <select id="yard" required="required">
-                <option value="">Select one...</option>
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-              </select>
-            </li>
-            <li>
-              <label for="pets">Other pets? <span class='red-alert'>*</span></label>
-              <select id="pets" required="required">
-                <option value="">Select one...</option>
-                <option value="no">No</option>
-                <option value="dogs">Yes, dog(s)</option>
-                <option value="cats">Yes, cat(s)</option>
-                <option value="both">Yes, dog(s) &amp; cat(s)</option>
-              </select>
-            </li>
-          </ul>
-          </fieldset>
-          <fieldset class="border">
             <legend>Adoption Preferences</legend>
             <ul>
               <li>
-                <label for="type">Type <span>*</span></label>
+                <label for="type">Type <span class='red-alert'>*</span></label>
                 <select id="type" required="required">
                   <option value="">Select one...</option>
                   <option value="any">Any</option>
@@ -112,13 +81,52 @@
               </li>
             </ul>
           </fieldset>
-          <button type="submit">Find my pet!</button>
+          <fieldset class="border">
+            <legend>Home Information</legend>
+            <ul>
+              <li>
+                <label for="rent-own">Rent or Own? <span class='red-alert'>*</span></label>
+                <select id="rent-own" required="required">
+                  <option value="">Select one...</option>
+                  <option value="rent">Rent</option>
+                  <option value="own">Own</option>
+                </select>
+              </li>
+            </li>
+            <li id="yardOption">
+              <label for="yard">Fenced Yard?</label>
+              <select id="yard">
+                <option value="">Select one...</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </li>
+            <li>
+              <label for="pets">Other pets? <span class='red-alert'>*</span></label>
+              <select id="pets" required="required">
+                <option value="">Select one...</option>
+                <option value="no">No</option>
+                <option value="dogs">Yes, dog(s)</option>
+                <option value="cats">Yes, cat(s)</option>
+                <option value="both">Yes, dog(s) &amp; cat(s)</option>
+              </select>
+            </li>
+          </ul>
+          </fieldset>
+          <button type="submit" id="submit">Find my pet!</button>
         </form>
+        <div id="adoptCat">
+          <h2>Sample Dialog!</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, inventore!</p>
+          <button id="exit">Close</button>
+        </div>
       </section>
       <footer class="contentBox grayBackground">
         <p>511 Boren Ave N. Seattle, WA 98108</p>
         <p>(206) 111-2222</p>
       </footer>
     </main>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
   </body>
 </html>
