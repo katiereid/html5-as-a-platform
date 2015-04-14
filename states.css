@@ -2,3 +2,7 @@ button:hover {
   background-color: rgba(42, 31, 255, 0.80);
   cursor: pointer;
 }
+
+.hidden {
+  display: none;
+}

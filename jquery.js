@@ -1,5 +1,5 @@
 // 1. Hide fenced yard option
-$("#yardOption").hide();
+// $("#yardOption").hide();
 
 // 2. When user selects "dog", fenced yard option appears
 $("#type").on("focusout", function() {
@@ -7,6 +7,19 @@ $("#type").on("focusout", function() {
     $("#yardOption").show();
   }
 });
+
+
+document.getElementById('type').addEventListener('focusout', function(){
+  var select = document.getElementById('type');
+  var yard = document.getElementById('yardOption');
+  if(select.value == 'dog'){
+    yard.classList.remove('hidden');
+  }
+  else if (select.value !== 'dog') {
+    yard.classList.add('hidden');
+  }
+})
+
 
 $("#adoptCat").hide();
 
