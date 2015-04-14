@@ -1,0 +1,82 @@
+$lightBlue: #79a0e8;
+$darkBlue: #1f4894;
+$darkGray: #616060;
+$lightGray: #F2F2F2;
+
+@mixin borderPadding {
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+body {
+  margin: 0px auto;
+  font-family: 'Quicksand', sans-serif;
+}
+
+form {
+  width: 45%;
+  margin: 0px auto;
+  font-size: 1.1em;
+}
+
+legend {
+  font-size: 1.5em;
+}
+
+input {
+  @include borderPadding;
+  border: 1px solid #aaa;
+  height: 20px;
+  width: 220px;
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+label {
+  width: 150px;
+  margin-top: 10px;
+  display: inline-block;
+  float: left;
+}
+
+select {
+  @include borderPadding;
+  border: 1px solid #aaa;
+  background-color: white;
+  height: 30px;
+  width: 220px;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.button {
+  @include borderPadding;
+  border: 3px solid $darkGray;
+}
+
+@media screen and (max-width: 690px) {
+
+  .floatRight {
+    float: none;
+  }
+
+  .contentBox {
+    padding: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .bannerText {
+  position: static;
+  display: block;
+  color: #EEE;
+  font-size: 3em;
+  text-align: center;
+  color: #3333aa;
+  margin: 1em 0 1em 0;
+  }
+
+}
+
